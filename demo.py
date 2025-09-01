@@ -31,14 +31,14 @@ input_data = {
     "height": height
 
 }
-data = pd.DataFrame(input_data)
+
 #user data
 st.subheader("User Data")
 st.dataframe(pd.DataFrame(input_data, index = [0]))
 
 #predicting
 labels = ["Adult", "child"]
-index = tabular_model.predict(data)
+index = tabular_model.predict(np.array([[num_countries, years_in_school, height]]))
 who_am_i = labels[index[0]]
 print(who_am_i)
 st.subheader("Predictions")

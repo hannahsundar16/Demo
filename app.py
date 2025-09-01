@@ -7,8 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1KJOgoPu_WiJ8rDhY-VU3Vdnt4ZKiC1y1
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+
 # Mounting from Google Drive
 
 import sklearn
